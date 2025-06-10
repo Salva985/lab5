@@ -1,0 +1,12 @@
+.shape {
+    width: 150px;
+    height: 150px;
+    background-color: #519ab4;
+    border-radius: 0;
+    transition: all 0.4s ease;
+}
+
+.shape:hover {
+    background-color: #cb5e51;
+    border-radius: 50%;
+}
