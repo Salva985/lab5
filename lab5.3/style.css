@@ -1,0 +1,86 @@
+/* General layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to top right, #e0f7fa, #ffffff);
+  }
+  
+  .ad {
+    height: 100vh;
+    text-align: center;
+    padding-top: 10vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Logo animation (bounce in) */
+  .logo {
+    font-size: 3rem;
+    color: #0077b6;
+    animation: bounceIn 1s ease-out forwards;
+  }
+  
+  /* Slogan animation (fade & wave) */
+  .slogan {
+    font-size: 1.8rem;
+    color: #023e8a;
+    opacity: 0;
+    animation: waveIn 1s ease-in forwards;
+    animation-delay: 1s;
+  }
+  
+  /* Chat bubble */
+  .bubble {
+    width: 80px;
+    height: 80px;
+    background-color: #48cae4;
+    border-radius: 50% 50% 50% 0;
+    position: absolute;
+    bottom: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pulse 1.5s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  
+  /* Keyframes */
+  
+  /* Bounce in from top */
+  @keyframes bounceIn {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(30px);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Wave fade-in */
+  @keyframes waveIn {
+    0% {
+      transform: scale(0.95) rotate(-2deg);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) rotate(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Bubble pulse */
+  @keyframes pulse {
+    0%, 100% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.1);
+    }
+  }
