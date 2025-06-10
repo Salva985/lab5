@@ -62,7 +62,7 @@
 }
 
 .card-front img {
-    width: 150px;
+    width: 250px;
     height: auto;
     border-radius: 25%;
     margin-bottom: 1rem;
@@ -73,7 +73,7 @@
     background-color: #d62828;
     color: #ffffff;
     transform: rotateY(180deg);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 2rem;
 }
